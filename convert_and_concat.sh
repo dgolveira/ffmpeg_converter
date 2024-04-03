@@ -11,6 +11,7 @@ mkdir -p "$output_path"
 
 # Encontrar todos os arquivos .webm e .mkv no diretório de entrada
 # e ordená-los pelo número no nome do arquivo
+
 files=$(find "$input_path" -maxdepth 1 \( -name '*.webm' -o -name '*.mkv' \) | sort -t '/' -k 2 -n)
 
 # Criar um arquivo temporário para a lista de arquivos mp4 para concatenação
